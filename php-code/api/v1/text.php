@@ -11,9 +11,13 @@ $AuthToken = "ae4c677b679e85e6f59a2556ea8470bc";
  
 $client = new Services_Twilio($AccountSid, $AuthToken);
  
-$call = $client->account->calls->create("+14158675309", "+14155551212", "http://demo.twilio.com/docs/voice.xml", array());
+$message = $client->account->messages->create(array(
+    "From" => "415-969-9990",
+    "To" => "415-595-2355",
+    "Body" => "$body",
+));
  
 // Display a confirmation message on the screen
-echo "Sent call {$call->sid}";
+echo "Sent message {$message->sid}";
 
 ?>
