@@ -15,7 +15,7 @@ $toNumber = "415-595-2355";
  
 $client = new Services_Twilio($AccountSid, $AuthToken);
  
-$call = $client->account->calls->create($fromNumber, $toNumber, "http://demo.twilio.com/docs/voice.xml", array());
+$call = $client->account->calls->create($fromNumber, $toNumber, "http://twilio.alex-dickson.com/php-code/api/v1/twiml/callTwiml.php?say=$body", array());
  
 // Display a confirmation message on the screen
 echo "Sent call {$call->sid}";
