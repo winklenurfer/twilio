@@ -8,10 +8,10 @@ if ($_GET[body]) {
 }
 
 // set your AccountSid and AuthToken from www.twilio.com/user/account
-$AccountSid = "AC24c73346a6248d4e5ccffb42333e0bbe";
-$AuthToken = "ae4c677b679e85e6f59a2556ea8470bc";
-$fromNumber = "415-969-9990";
-$toNumber = "415-595-2355";
+$AccountSid = "...";
+$AuthToken = "...";
+$fromNumber = "...";
+$toNumber = "...";
  
 $client = new Services_Twilio($AccountSid, $AuthToken);
 
